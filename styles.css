@@ -4,5 +4,89 @@
     box-sizing: border-box;
 }
 body {
-    
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f2f2f2;
+  padding: 10px 15px;
+  border-radius: 20px;
+  flex: 1;
+}
+
+/* map */
+.map {
+  position: relative;
+  height: 250px;
+  background: #e6e6e6;
+}
+
+/* restaurant list */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* cards */
+.card {
+  display: grid;
+  grid-template-columns: 80px 1fr 40px;
+  gap: 10px;
+  border: 2px solid #f4cccc;
+  border-radius: 12px;
+  padding: 10px;
+  align-items: center;
+}
+
+.restimg {
+  width: 70px;
+  height: 70px;
+  background: #d9d9d9;
+  border-radius: 8px;
+}
+
+.card-content h2 {
+  font-size: 14px;
+}
+
+.card-content p {
+  font-size: 12px;
+  color: gray;
+}
+
+.price {
+  margin-top: 4px;
+}
+
+.stars {
+}
+
+
+/* footer */
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.bottom-nav div {
+  font-size: 20px;
+}
+
