@@ -31,7 +31,20 @@ body {
 .map {
   position: relative;
   height: 250px;
-  /*background: #e6e6e6;*/
+   width: 100%;
+  overflow: hidden;
+  background: #e6e6e6;
+}
+.about-image {
+  width: 100%;
+  height: 100%;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* restaurant list */
