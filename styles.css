@@ -4,36 +4,67 @@
     box-sizing: border-box;
 }
 body {
-  background: #fff;
+  background: #fafafa;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
 /* header */
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px 40px;
+  gap: 15px;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: #f2f2f2;
-  padding: 10px 15px;
-  border-radius: 20px;
+  background: white;
+  padding: 12px 18px;
+  border-radius: 25px;
   flex: 1;
+  border: 1.5px solid #f4cccc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.search-bar,
+.filter {
+  transition: all 0.3s ease;
+}
+
+.search-bar:hover,
+.filter:hover {
+  transform: translateY(-2px);
+  border-color: #e63946;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+  padding: 12px 18px;
+  border-radius: 25px;
+  margin-left: 10px;
+	border: 1.5px solid #f4cccc;
+  /*border: 1.5px solid #e8e8e8;*/
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 /* map */
 .map {
-  position: relative;
-  height: 250px;
-   width: 100%;
+  height: 330px;
+  width: 100%;
   overflow: hidden;
   background: #e6e6e6;
+  border-radius: 18px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
 .about-image {
   width: 100%;
@@ -64,6 +95,13 @@ body {
   border-radius: 12px;
   padding: 10px;
   align-items: center;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #e63946;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.10);
 }
 
 .restimg {
@@ -102,4 +140,3 @@ footer {
 .bottom-nav div {
   font-size: 20px;
 }
-
