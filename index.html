@@ -15,9 +15,9 @@
     <p>mexican food</p>
   </div>
 
-  <div class="filter">
-    <p>Filters</p>
-  </div>
+  <div class="filter" onclick="openFilters()">
+  <p>Filters</p>
+</div>
 </header>
 
      <!-- map -->
@@ -94,6 +94,45 @@
     </section>
   </main>
 
+  <!-- filter -->
+<section class="filter-screen" id="filterScreen">
+
+  <div class="filter-handle" onclick="closeFilters()"></div>
+
+  <div class="filter-content">
+    <h2>Filters</h2>
+
+    <div class="filter-group">
+      <h3>Cuisine Type</h3>
+      <label><input type="checkbox"> Italian</label>
+      <label><input type="checkbox"> Chinese</label>
+      <label><input type="checkbox"> Mexican</label>
+      <label><input type="checkbox"> Mediterranean</label>
+    </div>
+
+    <div class="filter-group">
+      <h3>Dish Type  </h3>
+      <label><input type="checkbox"> Breakfast</label>
+      <label><input type="checkbox"> Brunch</label>
+      <label><input type="checkbox"> Lunch</label>
+      <label><input type="checkbox"> Dinner</label>
+    </div>
+
+    <div class="filter-row">Price Range ▾ </div>
+    <div class="filter-row">Deals and Discounts ▾ </div>
+    <div class="filter-row">Delivery ▾ </div>
+    <div class="filter-row">Budget Per Meal ▾ </div>
+    <div class="filter-row">Trending ▾ </div>
+    <div class="filter-row">Ratings ▾ </div>
+  </div>
+
+  <div class="filter-actions">
+    <button class="clear-btn">Clear</button>
+    <button class="save-btn">Save</button>
+  </div>
+	
+</section>
+
   <!-- footer -->
   <footer>
     <div>⌂</div>
@@ -101,6 +140,8 @@
     <div>⌕</div>
     <div>.</div>
   </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

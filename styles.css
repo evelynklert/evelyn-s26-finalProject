@@ -11,6 +11,14 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
+
+
+
+
+
+
+
 /* header */
 .header {
   display: flex;
@@ -42,6 +50,16 @@ body {
   box-shadow: 0 8px 18px rgba(0,0,0,0.10);
 }
 
+
+
+
+
+
+
+
+
+/* filter */
+
 .filter {
   display: flex;
   align-items: center;
@@ -55,6 +73,132 @@ body {
   /*border: 1.5px solid #e8e8e8;*/
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
+
+.filter-screen {
+  position: fixed;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 999;
+
+  transition: bottom 0.35s ease;
+  padding: 25px 40px;
+  overflow-y: auto;
+}
+
+.filter-screen.active {
+  bottom: 0;
+}
+
+.filter-handle {
+  width: 90px;
+  height: 6px;
+  background: #e63946;
+  border-radius: 20px;
+  margin: 0 auto 30px;
+  cursor: pointer;
+}
+
+.filter-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.filter-content h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.filter-group {
+  margin-bottom: 35px;
+}
+
+.filter-group h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: normal;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.filter-group h3 {
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.filter-group h3:hover {
+  color: #e63946;
+  padding-left: 6px;
+}
+
+.filter-group input {
+  accent-color: #e63946;
+}
+
+.filter-row {
+  font-size: 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.filter-row:hover {
+  color: #e63946;
+  padding-left: 10px;
+}
+
+/* new*/
+.filter-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.clear-btn,
+.save-btn {
+  padding: 12px 26px;
+  border-radius: 999px;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+.clear-btn {
+  background: white;
+  border: 1.5px solid #e63946;
+  color: #e63946;
+}
+
+.save-btn {
+  background: #e63946;
+  border: 1.5px solid #e63946;
+  color: white;
+}
+
+.clear-btn:hover,
+.save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+}
+
+.save-btn:hover {
+  background: #d62839;
+}
+
+
+
 
 /* map */
 .map {
@@ -78,6 +222,13 @@ body {
   display: block;
 }
 
+
+
+
+
+
+
+
 /* restaurant list */
 .list {
   display: flex;
@@ -85,6 +236,13 @@ body {
   gap: 15px;
   padding: 15px;
 }
+
+
+
+
+
+
+
 
 /* cards */
 .card {
@@ -126,6 +284,12 @@ body {
 
 .stars {
 }
+
+
+
+
+
+
 
 
 /* footer */
